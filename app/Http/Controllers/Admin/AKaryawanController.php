@@ -351,7 +351,7 @@ class AKaryawanController extends Controller
     {
         $karyawan = Karyawan::findOrFail($id);
         $gaji = Gaji::where('karyawan_id', $id)->orderBy('id', 'DESC')->first();
-        if(is_null($gaji)) return view('karyawan.gajiKosong');
+        if(is_null($gaji)) return view('admin.gajiKosong', compact('id'));
 
         $startDate = date("Y-m-d 23:59:59", strtotime($gaji->tanggal_awal));
         $lastDate = date("Y-m-d 00:00:00", strtotime($gaji->tanggal_akhir));
