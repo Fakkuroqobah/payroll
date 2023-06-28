@@ -1,0 +1,24 @@
+.img-empty {
+    width: 300px;
+}
+
+@media (max-width: 500px) {
+    .img-empty {
+        width: 90%;
+    }
+}
+
+.pull-right {
+    text-align: right;
+}
+.text-bold {
+    font-weight: 800;
+}
+
+.scroll-to-top.rounded {
+    z-index: 1;
+}
+
+.z-index-1 {
+    z-index: 1 !important;
+}
