@@ -56,8 +56,8 @@
         }
     @endphp
     <div>
-        <img src="{{ asset('img/logo.png') }}" class="logo float-left">
-        <img src="{{ asset('img/polygon.svg') }}" class="polygon float-right">
+        <img src="{{ public_path('img/logo.png') }}" class="logo float-left">
+        <img src="{{ public_path('img/polygon.svg') }}" class="polygon float-right">
         <div class="clear"></div>
     </div>
     
