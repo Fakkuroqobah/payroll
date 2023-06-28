@@ -3,6 +3,14 @@
 @section('title', 'Gaji')
 
 @section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{ route('a_karyawan_index') }}">Karyawan</a></li>
+    @if(Route::current()->getName() == 'a_karyawan_gaji')
+        <li class="breadcrumb-item active" aria-current="page">Gaji</li>
+    @elseif(Route::current()->getName() == 'a_karyawan_absen')
+        <li class="breadcrumb-item active" aria-current="page">Absen</li>
+    @elseif(Route::current()->getName() == 'a_karyawan_ttdt')
+        <li class="breadcrumb-item active" aria-current="page">TTDT</li>
+    @endif
 @endsection
 
 @push('styles')
